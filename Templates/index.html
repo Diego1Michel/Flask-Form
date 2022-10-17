@@ -4,51 +4,117 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+    <link rel="stylesheet" href="formulario.html">
+    <title>TopCars</title>
 </head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <div class="img_logo">
+                    <img class="logo" src="{{url_for('static',filename='logo.jpg')}}" alt="">
+                </div>
+                <div class="bottons_nav">
+                    <a href="#inicio">Inicio</a>
+                    <a href="#sobre">Sobre</a>
+                    <a href="#contato">Contato</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="back">    
+        <section id="inicio">
+            <div class="sob">
+                <div class="card_car">
+                    <img src="{{url_for('static',filename='carro_1.jpg')}}" alt="">
+                    <div class="text_card">
+                        <h2>Renault</h2>
+                        <p>Sandero GT Line 1.6 16V SCe (Flex)</p>
+                        <p>Consulte-nos</p>
+                        <p>42000 Km - 2017/2017</p>
+                    </div>
+                </div>
+                <div class="card_car">
+                    <img src="{{url_for('static',filename='carro_2.jpg')}}" alt="">
+                    <div class="text_card">
+                        <h2>Honda</h2>
+                        <p>New Civic LXR 2.0 i-Vtec (Aut) (Flex)</p>
+                        <p>Consulte-nos</p>
+                        <p>132000 Km - 2013/2014</p>
+                    </div>
+                </div>
+            </div>
+            <div class="sob2">
+                <div class="card_car">
+                    <img src="{{url_for('static',filename='carro_3.jpg')}}" alt="">
+                    <div class="text_card">
+                        <h2>Toyota</h2>
+                        <p>Etios X 1.3 Flex 16V 5P Mec.</p>
+                        <p>Consulte-nos</p>
+                        <p>50000 Km - 2019/2020</p>
+                    </div>
+                </div>
+                <div class="card_car">
+                    <img src="{{url_for('static',filename='carro.jpg')}}" alt="">
+                    <div class="text_card">
+                        <h2>Fiat</h2>
+                        <p>Idea Sporting 1.8 16V E.TorQ Dualogic (Flex)</p>
+                        <p>Consulte-nos</p>
+                        <p>103000 Km - 2011/2012</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-<body style="padding: 20px;">
-    <form action="/add_text" method="post">
-        <label for="textv">Name:</label><br>
-        <input type="text" id="textv" name="textv" value=""><br>
-     
-    <br><br><hr>
+        <section id="sobre">
+            <div class="about">
+                <div class="title">
+                    <h2>Sobre Nós</h2>
+                </div> 
+                <div class="text_sobre">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut aut, deleniti modi illum ipsa nisi soluta aperiam animi velit earum non voluptatum autem similique. Sint animi dolores sit sunt quis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Non error rem corporis sit dolorum minima repellat dicta neque aliquam est quas fugit nihil, perspiciatis vel magni vero odio iste ea!</p>
+                </div>   
+            </div>
+        </section>
+    
+    <section id="contato">
+        <div class="contato_form">
+            <form class="form" action="/add_text" method="post">
+                <label for="textv">Name:</label><br>
+                <input type="text" id="textv" name="textv" placeholder="Digite seu Nome" value=""><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" placeholder="Digite seu Email" value=""><br>
+                <label for="cidade">Cidade:</label><br>
+                <input type="text" id="cidade" name="cidade" placeholder="Digite sua Cidade" value=""><br>
+                <label for="endereco">Endereço:</label><br>
+                <input type="text" id="endereco" name="endereco" placeholder="Digite seu Endereço" value=""><br>
+                <label for="telefone">Telefone:</label><br>
+                <input type="number" id="telefone" name="telefone" placeholder="Digite seu Telefone" value=""><br>
+                <label for="data_nascimento">Data Nascimento:</label><br>
+                <input type="date" id="data_nascimento" name="data_nascimento" value=""><br>
+                <input class="enviar" type="submit" value="Submit"> 
+            </form>
+        </div>
+    </section>
+</div>
+    <footer>
+        <section id="footer">
+            <div class="hor">
+                <h2>Horário Atendimento</h2>
+                <p>Segunda à Sexta | 08:30 - 18:00</p>
+                <p>Sábados | 08:30 - 16:00</p>
+                <p><small class="copyright">&copy; 2022 StopCars Company. Todos os direitos reservados.</small></p>
 
-        <label for="textv">Email:</label><br>
-        <input type="email" id="email" name="email" value=""><br>
-     
-    <br><br><hr>
-
-        <label for="textv">Cidade:</label><br>
-        <input type="text" id="cidade" name="cidade" value=""><br>
-     
-    <br><br><hr>
-
-        <label for="textv">Endereço:</label><br>
-        <input type="text" id="endereco" name="endereco" value=""><br>
-     
-    <br><br><hr>
-  
-        <label for="textv">Telefone:</label><br>
-        <input type="tel" id="telefone" name="telefone" value=""><br>
-     
-    <br><br><hr>
-
-        <label for="textv">CPF:</label><br>
-        <input type="number" id="cpf" name="cpf" value=""><br>
-     
-    <br><br><hr>
-
-        <label for="textv">Data Nascimento:</label><br>
-        <input type="date" id="data_nascimento" name="data_nascimento" value=""><br>
+            </div>
+                <div class="midia">
+                <a href="https://pt-br.facebook.com/"> <img src="{{url_for('static',filename='icons8-facebook-novo-90.png')}}" alt=""></a>
+                <a href="https://www.instagram.com/"> <img src="{{url_for('static',filename='icons8-instagram-90.png')}}" alt=""></a>
+                <a href="https://www.whatsapp.com/?lang=pt_br"> <img src="{{url_for('static',filename='icons8-whatsapp-90.png')}}" alt=""></a>    
+                <a href="https://www.youtube.com/"> <img src="{{url_for('static',filename='icons8-youtube-90.png')}}" alt=""></a>
+                </div>
+        </section>
         
-    <br><br><hr>
-
-    <input type="submit" value="Submit">
-    </form>
-    <ul>
-        {% for text in all_text %}
-        <li> {{ text[1] }} </li>
-        {% endfor %}
-    </ul>
-    </html>
+    </footer>
+</body>
+</html>

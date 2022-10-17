@@ -4,8 +4,8 @@ connection=pymysql.connect(host="localhost", user = "root", passwd="00000000", d
 cursor = connection.cursor()
 
 # função add dados ao banco
-def add_text(name, email, cidade, endereco, telefone, cpf, data_nascimento):
-    cursor.execute("INSERT INTO form(ID, name, email, cidade, endereco, telefone, cpf, data_nascimento) VALUES (DEFAULT, %s,%s,%s,%s,%s,%s,%s)", (name, email, cidade, endereco, telefone, cpf, data_nascimento))
+def add_text(name, email, cidade, endereco, telefone, data_nascimento):
+    cursor.execute("INSERT INTO form(ID, nome, email, cidade, endereco, telefone,data_nascimento) VALUES (DEFAULT, %s,%s,%s,%s,%s,%s)", (name, email, cidade, endereco, telefone, data_nascimento))
     connection.commit()
     return 1
 

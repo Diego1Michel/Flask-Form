@@ -1,0 +1,183 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+nav{
+    background-color: rgb(0, 0, 0);
+   
+}
+
+.container{
+    padding: 10px 65px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 65px;
+    height: 65px;
+    border-radius: 55px;
+}
+
+.bottons_nav{
+    display: flex;
+    margin-right: 20px;
+}
+
+.bottons_nav a{
+    text-decoration: none;
+    color: rgb(241, 205, 205);
+    font-size: 15px;
+    font-weight: 400;
+    margin-left: 60px;
+    text-transform: uppercase;
+    border: 1px solid rgba(255, 255, 255, 0.788);
+    border-radius: 30px;
+    padding: 10px 17px;
+}
+
+.bottons_nav a:hover{
+    background-color: rgba(255, 255, 255, 0.795);
+    transform: scale(0.8);
+    transition: all 0.5s;
+    box-shadow: 1px 3px rgba(223, 210, 210, 0.603);
+    color: black;
+}
+.back{
+    background-color: rgba(165, 42, 42, 0.199);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#inicio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+.sob{
+    margin: 50px 80px;
+    display: flex;
+}
+
+.card_car{
+    display:flex ;
+    flex-direction: column;
+    margin-right: 50px;
+    background-color: rgba(240, 138, 214, 0.185);
+    border: 1px solid rgba(12, 13, 31, 0.377);
+    width: 350px;
+    border-radius: 10px;
+}
+
+.card_car img{
+    width: 350px;
+    height: 300px;
+    border-radius: 10px 10px 0 0 ;
+}
+
+.text_card{
+    margin-left: 10px;
+}
+
+.text_card h2{
+    font-size: 25px;
+    padding-bottom: 10px;
+}
+
+.text_card p{
+    font-size: 16px;
+    padding-bottom: 5px;
+}
+
+.sob2{
+    display: flex;
+    flex-direction: row;
+}
+
+#sobre{
+    margin-right: 50px;
+    margin-bottom: 25px;
+}
+
+footer{
+    background-color: rgba(177, 206, 206, 0.596);
+}
+.about{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 15px ;
+    border-radius: 8px;
+    height: 300px;
+    width: 750px;
+    padding-top: 50px;
+    border: 1px solid rgba(172, 48, 48, 0.493);
+}
+.title h2{
+    font-size: 35px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgba(0, 0, 0, 0.822);
+}
+.text_sobre p{
+    font-size: 14px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgba(1, 14, 9, 0.342);
+    width: 550px;
+    text-align: center;
+}
+
+.contato_form{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    background-color: azure;
+    width: 520px;
+    height: 460px;
+    padding-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 25px;
+}
+
+.form input{
+    padding-bottom: 5px;
+    margin:11px 0 15px 0;
+
+} 
+
+
+
+
+#footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+    background-color: rgba(168, 44, 44, 0.692);
+    height: 256px;
+}
+
+.hor{
+    margin: 15px 0 0 0px;
+}
+
+.hor h2{
+    color: aliceblue;
+}
+
+.hor p{
+    color: aliceblue;
+    padding-top: 9px;
+}
+
+.midia img{
+    width: 50px;
+    height: 50px;
+    color: aliceblue;
+    margin-left: 10px;
+}
