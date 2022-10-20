@@ -1,6 +1,6 @@
 import pymysql
 #conexão com o mySql
-connection=pymysql.connect(host="localhost", user = "root", passwd="00000000", database="FLASK", port=3306)
+connection=pymysql.connect(host="localhost", user = "root", passwd="00000000", database="testes", port=3306)
 cursor = connection.cursor()
 
 # função add dados ao banco
